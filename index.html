@@ -601,7 +601,26 @@
       <a href="#kontakt" class="btn">Kontakt aufnehmen</a>
     </div>
     <div class="hero-image">
-      
+      <div style="width:100%;height:100%;min-height:100%;background:#3d2b1f;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+  <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="wgHero">
+        <feTurbulence type="fractalNoise" baseFrequency="0.012 0.6" numOctaves="5" seed="3"/>
+        <feColorMatrix type="saturate" values="0.25"/>
+        <feBlend in="SourceGraphic" mode="overlay" result="blend"/>
+        <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+      </filter>
+    </defs>
+    <rect width="800" height="600" fill="#3d2b1f"/>
+    <rect width="800" height="600" fill="rgba(200,160,100,0.14)" filter="url(#wgHero)"/>
+    <line x1="0" y1="100" x2="800" y2="118" stroke="rgba(255,220,150,0.06)" stroke-width="10"/>
+    <line x1="0" y1="200" x2="800" y2="185" stroke="rgba(255,220,150,0.04)" stroke-width="14"/>
+    <line x1="0" y1="310" x2="800" y2="328" stroke="rgba(255,220,150,0.07)" stroke-width="8"/>
+    <line x1="0" y1="420" x2="800" y2="408" stroke="rgba(255,220,150,0.05)" stroke-width="12"/>
+    <line x1="0" y1="530" x2="800" y2="548" stroke="rgba(255,220,150,0.04)" stroke-width="9"/>
+  </svg>
+  <span style="position:relative;color:rgba(255,255,255,0.2);font-family:Georgia,serif;font-size:14px;letter-spacing:6px;text-transform:uppercase;">Foto folgt</span>
+</div>
     </div>
   </section>
 
@@ -962,14 +981,14 @@
       </div>
       <div class="kontakt-item">
         <p class="kontakt-item-label">E-Mail</p>
-        <p class="kontakt-item-value"><a href="/cdn-cgi/l/email-protection#0960676f66496e666c6b6c657a24736064646c7b6c60276d6c"><span class="__cf_email__" data-cfemail="6c05020a032c0b03090e09001f4116050101091e0905420809">[email&#160;protected]</span></a></p>
+        <p class="kontakt-item-value"><a href="mailto:info@goebels-zimmerei.de">info@goebels-zimmerei.de</a></p>
       </div>
       <div class="kontakt-item">
         <p class="kontakt-item-label">Adresse</p>
         <p class="kontakt-item-value">Musterstraße 1<br>16835 Banzendorf</p>
       </div>
     </div>
-    <a href="/cdn-cgi/l/email-protection#61080f070e21060e0403040d124c1b080c0c041304084f0504" class="btn btn-light fade-in">Nachricht schreiben</a>
+    <a href="mailto:info@goebels-zimmerei.de" class="btn btn-light fade-in">Nachricht schreiben</a>
   </section>
 
   <!-- FOOTER -->
@@ -980,7 +999,7 @@
     </span>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     // Fade-in on scroll
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((e, i) => {
@@ -990,4 +1009,13 @@
       });
     }, { threshold: 0.12 });
 
-    document.q
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Nav shrink on scroll
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      nav.style.padding = window.scrollY > 60 ? '0.8rem 4rem' : '1.5rem 4rem';
+    });
+  </script>
+</body>
+</html>
