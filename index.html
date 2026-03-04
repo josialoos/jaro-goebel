@@ -1,7 +1,8 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jaro Göbels – Zimmerei & Holzbau | Lindow, Rheinsberg, Neuruppin</title>
   <meta name="description" content="Zimmerei Jaro Göbels – Handwerk mit Holz in der Region Lindow (Mark), Rheinsberg, Neuruppin und Umgebung. Dachstuhl, Holzfassade, Carports, Dielenverlegung und mehr." />
@@ -600,12 +601,7 @@
       <a href="#kontakt" class="btn">Kontakt aufnehmen</a>
     </div>
     <div class="hero-image">
-      <img
-        src="https://picsum.photos/seed/dachstuhl-hero/900/700"
-        alt="Zimmermann bei der Arbeit am Dachstuhl"
-        loading="eager"
-        onerror="this.src='https://picsum.photos/seed/holzbau/900/700"
-      />
+      
     </div>
   </section>
 
@@ -627,7 +623,27 @@
 
       <div class="leistung-item fade-in">
         <div class="leistung-photo">
-          <img src="https://picsum.photos/seed/dachstuhl/600/450" alt="Dachstuhl Holzkonstruktion" loading="lazy"/>
+          <div style="width:100%;height:100%;min-height:100%;background:#5c4033;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+  <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 600 450" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="wgDac">
+        <feTurbulence type="fractalNoise" baseFrequency="0.015 0.65" numOctaves="4" seed="7"/>
+        <feColorMatrix type="saturate" values="0.2"/>
+        <feBlend in="SourceGraphic" mode="overlay" result="blend"/>
+        <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+      </filter>
+    </defs>
+    <rect width="600" height="450" fill="#5c4033"/>
+    <rect width="600" height="450" fill="rgba(200,160,100,0.12)" filter="url(#wgDac)"/>
+    <!-- wood grain lines -->
+    <line x1="0" y1="80" x2="600" y2="95" stroke="rgba(255,220,150,0.06)" stroke-width="8"/>
+    <line x1="0" y1="160" x2="600" y2="148" stroke="rgba(255,220,150,0.04)" stroke-width="12"/>
+    <line x1="0" y1="240" x2="600" y2="255" stroke="rgba(255,220,150,0.07)" stroke-width="6"/>
+    <line x1="0" y1="320" x2="600" y2="310" stroke="rgba(255,220,150,0.05)" stroke-width="10"/>
+    <line x1="0" y1="400" x2="600" y2="415" stroke="rgba(255,220,150,0.04)" stroke-width="8"/>
+  </svg>
+  <span style="position:relative;color:rgba(255,255,255,0.3);font-family:Georgia,serif;font-size:13px;letter-spacing:5px;text-transform:uppercase;">Dachstuhl</span>
+</div>
         </div>
         <div class="leistung-body">
           <svg class="leistung-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -642,7 +658,27 @@
 
       <div class="leistung-item fade-in">
         <div class="leistung-photo">
-          <img src="https://picsum.photos/seed/fassade/600/450" alt="Holzfassade Hausbekleidung" loading="lazy"/>
+          <div style="width:100%;height:100%;min-height:100%;background:#4e3b2a;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+  <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 600 450" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="wgHol">
+        <feTurbulence type="fractalNoise" baseFrequency="0.015 0.65" numOctaves="4" seed="7"/>
+        <feColorMatrix type="saturate" values="0.2"/>
+        <feBlend in="SourceGraphic" mode="overlay" result="blend"/>
+        <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+      </filter>
+    </defs>
+    <rect width="600" height="450" fill="#4e3b2a"/>
+    <rect width="600" height="450" fill="rgba(200,160,100,0.12)" filter="url(#wgHol)"/>
+    <!-- wood grain lines -->
+    <line x1="0" y1="80" x2="600" y2="95" stroke="rgba(255,220,150,0.06)" stroke-width="8"/>
+    <line x1="0" y1="160" x2="600" y2="148" stroke="rgba(255,220,150,0.04)" stroke-width="12"/>
+    <line x1="0" y1="240" x2="600" y2="255" stroke="rgba(255,220,150,0.07)" stroke-width="6"/>
+    <line x1="0" y1="320" x2="600" y2="310" stroke="rgba(255,220,150,0.05)" stroke-width="10"/>
+    <line x1="0" y1="400" x2="600" y2="415" stroke="rgba(255,220,150,0.04)" stroke-width="8"/>
+  </svg>
+  <span style="position:relative;color:rgba(255,255,255,0.3);font-family:Georgia,serif;font-size:13px;letter-spacing:5px;text-transform:uppercase;">Holzfassade</span>
+</div>
         </div>
         <div class="leistung-body">
           <svg class="leistung-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -660,7 +696,27 @@
 
       <div class="leistung-item fade-in">
         <div class="leistung-photo">
-          <img src="https://picsum.photos/seed/vertaefelung/600/450" alt="Holzvertäfelung Innenausbau" loading="lazy"/>
+          <div style="width:100%;height:100%;min-height:100%;background:#6b4c35;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+  <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 600 450" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="wgVer">
+        <feTurbulence type="fractalNoise" baseFrequency="0.015 0.65" numOctaves="4" seed="7"/>
+        <feColorMatrix type="saturate" values="0.2"/>
+        <feBlend in="SourceGraphic" mode="overlay" result="blend"/>
+        <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+      </filter>
+    </defs>
+    <rect width="600" height="450" fill="#6b4c35"/>
+    <rect width="600" height="450" fill="rgba(200,160,100,0.12)" filter="url(#wgVer)"/>
+    <!-- wood grain lines -->
+    <line x1="0" y1="80" x2="600" y2="95" stroke="rgba(255,220,150,0.06)" stroke-width="8"/>
+    <line x1="0" y1="160" x2="600" y2="148" stroke="rgba(255,220,150,0.04)" stroke-width="12"/>
+    <line x1="0" y1="240" x2="600" y2="255" stroke="rgba(255,220,150,0.07)" stroke-width="6"/>
+    <line x1="0" y1="320" x2="600" y2="310" stroke="rgba(255,220,150,0.05)" stroke-width="10"/>
+    <line x1="0" y1="400" x2="600" y2="415" stroke="rgba(255,220,150,0.04)" stroke-width="8"/>
+  </svg>
+  <span style="position:relative;color:rgba(255,255,255,0.3);font-family:Georgia,serif;font-size:13px;letter-spacing:5px;text-transform:uppercase;">Vertäfelung</span>
+</div>
         </div>
         <div class="leistung-body">
           <svg class="leistung-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -677,7 +733,27 @@
 
       <div class="leistung-item fade-in">
         <div class="leistung-photo">
-          <img src="https://picsum.photos/seed/dielen/600/450" alt="Dielenverlegung Massivholzboden" loading="lazy"/>
+          <div style="width:100%;height:100%;min-height:100%;background:#7a5c3e;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+  <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 600 450" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="wgDie">
+        <feTurbulence type="fractalNoise" baseFrequency="0.015 0.65" numOctaves="4" seed="7"/>
+        <feColorMatrix type="saturate" values="0.2"/>
+        <feBlend in="SourceGraphic" mode="overlay" result="blend"/>
+        <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+      </filter>
+    </defs>
+    <rect width="600" height="450" fill="#7a5c3e"/>
+    <rect width="600" height="450" fill="rgba(200,160,100,0.12)" filter="url(#wgDie)"/>
+    <!-- wood grain lines -->
+    <line x1="0" y1="80" x2="600" y2="95" stroke="rgba(255,220,150,0.06)" stroke-width="8"/>
+    <line x1="0" y1="160" x2="600" y2="148" stroke="rgba(255,220,150,0.04)" stroke-width="12"/>
+    <line x1="0" y1="240" x2="600" y2="255" stroke="rgba(255,220,150,0.07)" stroke-width="6"/>
+    <line x1="0" y1="320" x2="600" y2="310" stroke="rgba(255,220,150,0.05)" stroke-width="10"/>
+    <line x1="0" y1="400" x2="600" y2="415" stroke="rgba(255,220,150,0.04)" stroke-width="8"/>
+  </svg>
+  <span style="position:relative;color:rgba(255,255,255,0.3);font-family:Georgia,serif;font-size:13px;letter-spacing:5px;text-transform:uppercase;">Dielen</span>
+</div>
         </div>
         <div class="leistung-body">
           <svg class="leistung-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -696,7 +772,27 @@
 
       <div class="leistung-item fade-in">
         <div class="leistung-photo">
-          <img src="https://picsum.photos/seed/carport/600/450" alt="Holz Carport Bau" loading="lazy"/>
+          <div style="width:100%;height:100%;min-height:100%;background:#5a4030;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+  <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 600 450" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="wgCar">
+        <feTurbulence type="fractalNoise" baseFrequency="0.015 0.65" numOctaves="4" seed="7"/>
+        <feColorMatrix type="saturate" values="0.2"/>
+        <feBlend in="SourceGraphic" mode="overlay" result="blend"/>
+        <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+      </filter>
+    </defs>
+    <rect width="600" height="450" fill="#5a4030"/>
+    <rect width="600" height="450" fill="rgba(200,160,100,0.12)" filter="url(#wgCar)"/>
+    <!-- wood grain lines -->
+    <line x1="0" y1="80" x2="600" y2="95" stroke="rgba(255,220,150,0.06)" stroke-width="8"/>
+    <line x1="0" y1="160" x2="600" y2="148" stroke="rgba(255,220,150,0.04)" stroke-width="12"/>
+    <line x1="0" y1="240" x2="600" y2="255" stroke="rgba(255,220,150,0.07)" stroke-width="6"/>
+    <line x1="0" y1="320" x2="600" y2="310" stroke="rgba(255,220,150,0.05)" stroke-width="10"/>
+    <line x1="0" y1="400" x2="600" y2="415" stroke="rgba(255,220,150,0.04)" stroke-width="8"/>
+  </svg>
+  <span style="position:relative;color:rgba(255,255,255,0.3);font-family:Georgia,serif;font-size:13px;letter-spacing:5px;text-transform:uppercase;">Carport</span>
+</div>
         </div>
         <div class="leistung-body">
           <svg class="leistung-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -713,7 +809,27 @@
 
       <div class="leistung-item fade-in">
         <div class="leistung-photo">
-          <img src="https://picsum.photos/seed/bauwagen/600/450" alt="Bauwagen Holzaufbau" loading="lazy"/>
+          <div style="width:100%;height:100%;min-height:100%;background:#634838;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+  <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 600 450" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="wgBau">
+        <feTurbulence type="fractalNoise" baseFrequency="0.015 0.65" numOctaves="4" seed="7"/>
+        <feColorMatrix type="saturate" values="0.2"/>
+        <feBlend in="SourceGraphic" mode="overlay" result="blend"/>
+        <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+      </filter>
+    </defs>
+    <rect width="600" height="450" fill="#634838"/>
+    <rect width="600" height="450" fill="rgba(200,160,100,0.12)" filter="url(#wgBau)"/>
+    <!-- wood grain lines -->
+    <line x1="0" y1="80" x2="600" y2="95" stroke="rgba(255,220,150,0.06)" stroke-width="8"/>
+    <line x1="0" y1="160" x2="600" y2="148" stroke="rgba(255,220,150,0.04)" stroke-width="12"/>
+    <line x1="0" y1="240" x2="600" y2="255" stroke="rgba(255,220,150,0.07)" stroke-width="6"/>
+    <line x1="0" y1="320" x2="600" y2="310" stroke="rgba(255,220,150,0.05)" stroke-width="10"/>
+    <line x1="0" y1="400" x2="600" y2="415" stroke="rgba(255,220,150,0.04)" stroke-width="8"/>
+  </svg>
+  <span style="position:relative;color:rgba(255,255,255,0.3);font-family:Georgia,serif;font-size:13px;letter-spacing:5px;text-transform:uppercase;">Bauwagen</span>
+</div>
         </div>
         <div class="leistung-body">
           <svg class="leistung-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -752,10 +868,27 @@
       </p>
     </div>
     <div class="about-image fade-in">
-      <img
-        src="https://picsum.photos/seed/zimmermann/700/900"
-        alt="Zimmermann bei der Holzbearbeitung"
-      />
+      <div style="width:100%;height:100%;min-height:100%;background:#3d2b1f;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+  <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 600 450" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="wgZim">
+        <feTurbulence type="fractalNoise" baseFrequency="0.015 0.65" numOctaves="4" seed="7"/>
+        <feColorMatrix type="saturate" values="0.2"/>
+        <feBlend in="SourceGraphic" mode="overlay" result="blend"/>
+        <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+      </filter>
+    </defs>
+    <rect width="600" height="450" fill="#3d2b1f"/>
+    <rect width="600" height="450" fill="rgba(200,160,100,0.12)" filter="url(#wgZim)"/>
+    <!-- wood grain lines -->
+    <line x1="0" y1="80" x2="600" y2="95" stroke="rgba(255,220,150,0.06)" stroke-width="8"/>
+    <line x1="0" y1="160" x2="600" y2="148" stroke="rgba(255,220,150,0.04)" stroke-width="12"/>
+    <line x1="0" y1="240" x2="600" y2="255" stroke="rgba(255,220,150,0.07)" stroke-width="6"/>
+    <line x1="0" y1="320" x2="600" y2="310" stroke="rgba(255,220,150,0.05)" stroke-width="10"/>
+    <line x1="0" y1="400" x2="600" y2="415" stroke="rgba(255,220,150,0.04)" stroke-width="8"/>
+  </svg>
+  <span style="position:relative;color:rgba(255,255,255,0.3);font-family:Georgia,serif;font-size:13px;letter-spacing:5px;text-transform:uppercase;">Zimmermann</span>
+</div>
     </div>
   </section>
 
@@ -764,11 +897,27 @@
   <!-- REGION -->
   <section class="region" id="region" style="padding: 7rem 6rem;">
     <div class="region-img-main fade-in" style="aspect-ratio:4/3; overflow:hidden;">
-      <img
-        src="https://picsum.photos/seed/ruppiner-land/800/600"
-        alt="Landschaft Ruppiner Seenland Brandenburg"
-        style="width:100%;height:100%;object-fit:cover;filter:sepia(10%);"
-      />
+      <div style="width:100%;height:100%;min-height:100%;background:#3a4a35;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+  <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 600 450" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="wgRup">
+        <feTurbulence type="fractalNoise" baseFrequency="0.015 0.65" numOctaves="4" seed="7"/>
+        <feColorMatrix type="saturate" values="0.2"/>
+        <feBlend in="SourceGraphic" mode="overlay" result="blend"/>
+        <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+      </filter>
+    </defs>
+    <rect width="600" height="450" fill="#3a4a35"/>
+    <rect width="600" height="450" fill="rgba(200,160,100,0.12)" filter="url(#wgRup)"/>
+    <!-- wood grain lines -->
+    <line x1="0" y1="80" x2="600" y2="95" stroke="rgba(255,220,150,0.06)" stroke-width="8"/>
+    <line x1="0" y1="160" x2="600" y2="148" stroke="rgba(255,220,150,0.04)" stroke-width="12"/>
+    <line x1="0" y1="240" x2="600" y2="255" stroke="rgba(255,220,150,0.07)" stroke-width="6"/>
+    <line x1="0" y1="320" x2="600" y2="310" stroke="rgba(255,220,150,0.05)" stroke-width="10"/>
+    <line x1="0" y1="400" x2="600" y2="415" stroke="rgba(255,220,150,0.04)" stroke-width="8"/>
+  </svg>
+  <span style="position:relative;color:rgba(255,255,255,0.3);font-family:Georgia,serif;font-size:13px;letter-spacing:5px;text-transform:uppercase;">Ruppiner Land</span>
+</div>
     </div>
     <div class="region-text fade-in">
       <p class="section-label">Einsatzgebiet</p>
